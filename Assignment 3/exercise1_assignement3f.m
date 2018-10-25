@@ -78,8 +78,8 @@ stat = regionprops(S,'centroid');
 figure(1)
 imshow(I); 
 hold on;
-for x = 1: numel(stat)
-    plot(stat(x).Centroid(1),stat(x).Centroid(2),'white O');title("Candy Found");
+for i = 1: numel(stat)
+    plot(stat(i).Centroid(1),stat(i).Centroid(2),'white O');title("Candy Found");
 end
 hold off;
 
